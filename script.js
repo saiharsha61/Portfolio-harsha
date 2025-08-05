@@ -27,4 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
       section.style.boxShadow = '0 0 20px rgba(255, 0, 255, 0.1), inset 0 0 15px rgba(0, 195, 255, 0.1)';
     });
   });
+
+  // Mobile navigation toggle
+  const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  mobileNavToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('is-active');
+  });
 });
